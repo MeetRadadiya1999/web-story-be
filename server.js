@@ -15,6 +15,11 @@ const app = express();
 app.use(express.json()); // Parse incoming JSON requests
 app.use(cors()); // Enable Cross-Origin Resource Sharing
 
+// Add a root route
+app.get('/', (req, res) => {
+  res.send('Welcome to my API!'); // Simple response
+});
+
 // Routes
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/stories', require('./routes/storyRoutes'));
