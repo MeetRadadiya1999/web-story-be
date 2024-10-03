@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json()); 
 
 app.use(cors({
-  origin: 'https://web-story-5kzh5kjgx-meetradadiya1999s-projects.vercel.app/'
+  origin: 'https://web-story-dl8hnxu6u-meetradadiya1999s-projects.vercel.app'
 }));
 
 
